@@ -97,3 +97,24 @@ CREATE TABLE bat_tracking_23_24 (
 COPY bat_tracking_23_24
 FROM 'C:/Database/data/db/bat_tracking.csv'
 WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+
+CREATE TABLE stc_15_24 (
+	Name VARCHAR(100),
+	Season Int,
+	xwoba DECIMAL(5, 3),
+	xwobacon DECIMAL(5, 3),
+	sweet_spot_pct DECIMAL (5, 2),
+	barrel_rate DECIMAL(5, 2),
+	hard_hit_pct DECIMAL (5, 2),
+	ev50 DECIMAL(7, 3),
+	adj_ev DECIMAL(7,3),
+	whiff_percent DECIMAL (5, 2),
+	swing_percent DECIMAL (5, 2),
+	pull_pct DECIMAL(5, 2),
+	center_pct DECIMAL (5, 2),
+	opposite_pct DECIMAL (5,2)
+);
+
+COPY stc_15_24
+FROM 'C:/Database/data/db/stc_15_24.csv'
+WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
