@@ -65,7 +65,9 @@ CREATE TABLE swing_value_18_24 (
 	Name VARCHAR(100),
 	Season INT,
 	Chase_Value DECIMAL(7,4),
-	Overall_Value DECIMAL(7,4)
+	Overall_Value DECIMAL(7,4),
+	Pitch_count INT,
+	Breaking_Value DECIMAL(7,4)
 );
 
 COPY swing_value_18_24
